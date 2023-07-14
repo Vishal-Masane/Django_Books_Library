@@ -9,6 +9,10 @@ class Product(models.Model):
     class Meta:
         abstract = True
 
+class TestModel(models.Model):
+    name = models.CharField(max_length=100)
+    age = models.IntegerField()
+
 class Book(models.Model):
     name = models.CharField(max_length=100)
     price = models.IntegerField()
